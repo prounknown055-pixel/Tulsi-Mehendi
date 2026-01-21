@@ -21,7 +21,7 @@ import { useCreateInquiry } from "@/hooks/use-inquiries";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { insertInquirySchema, type InsertInquiry } from "@shared/schema";
+import { insertInquirySchema, type InsertInquiry } from "../shared/schema";
 
 // --- Components ---
 
