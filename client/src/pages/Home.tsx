@@ -403,8 +403,7 @@ const Contact = () => {
             <div className="mt-8">
               <Button 
                 className="w-full sm:w-auto bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full px-8 py-6 text-lg shadow-lg flex items-center justify-center gap-2 transition-all"
-                onClick={() => window.open('https://wa.me/9183693 15540?text=Hello%20Tulsi%20Mehndi%20Studio%20%F0%9F%8C%BF%0A%0AI%20would%20like%20to%20book%20a%20Mehndi%20appointment.%0A%0A%F0%9F%93%85%20Event%20Date:%0A%F0%9F%93%8D%20Location:%0A%F0%9F%91%B0%20Type%20of%20Mehndi%20(Bridal%20/%20Party%20/%20Guest):%0A%F0%9F%93%9E%20Contact%20Number:%0A%0APlease%20let%20me%20know%20the%20availability%20and%20charges.%0AThank%20you!',
-    '_blank')}
+                onClick={() => window.open('https://wa.me/9183693 15540'_blank')}
               >
                 <FaWhatsapp className="h-6 w-6" /> Book via WhatsApp
               </Button>
