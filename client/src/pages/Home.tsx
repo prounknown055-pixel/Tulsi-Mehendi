@@ -403,7 +403,7 @@ const Contact = () => {
             <div className="mt-8">
               <Button 
                 className="w-full sm:w-auto bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full px-8 py-6 text-lg shadow-lg flex items-center justify-center gap-2 transition-all"
-                onClick={() => window.open('https://wa.me/919876543210', '_blank')}
+                onClick={() => window.open('https://wa.me/918369315540', '_blank')}
               >
                 <FaWhatsapp className="h-6 w-6" /> Chat on WhatsApp
               </Button>
