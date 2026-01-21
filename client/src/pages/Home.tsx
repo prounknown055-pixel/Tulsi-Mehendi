@@ -405,7 +405,17 @@ const Contact = () => {
                 className="w-full sm:w-auto bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full px-8 py-6 text-lg shadow-lg flex items-center justify-center gap-2 transition-all"
                 onClick={() => window.open('https://wa.me/918369315540', '_blank')}
               >
-                <FaWhatsapp className="h-6 w-6" /> Chat on WhatsApp
+                <FaWhatsapp className="h-6 w-6" /> Hello Tulsi Mehndi Studio 🌿
+
+I would like to book a Mehndi appointment.
+
+📅 Event Date:
+📍 Location:
+👰 Type of Mehndi (Bridal / Party / Guest):
+📞 Contact Number:
+
+Please let me know the availability and charges.
+Thank you!
               </Button>
             </div>
           </div>
