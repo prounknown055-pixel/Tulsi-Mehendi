@@ -217,7 +217,7 @@ const Services = () => {
       title: "Bridal Mehndi",
       description: "Intricate, full-hands and feet designs that tell your love story. Includes consultation and trial.",
       price: "Starting from ₹5,100",
-      image: "https://images.unsplash.com/photo-1616091093729-c0463d3957eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" // Bridal hands
+      image: image: "/bridal.jpg" // Bridal hands
     },
     {
       title: "Party Henna",
