@@ -401,12 +401,29 @@ const Contact = () => {
             </div>
             
             <div className="mt-8">
-              <Button 
-                className="w-full sm:w-auto bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full px-8 py-6 text-lg shadow-lg flex items-center justify-center gap-2 transition-all"
-                onClick={() => window.open('https://wa.me/9183693 15540'_blank')}
-              >
-                <FaWhatsapp className="h-6 w-6" /> Book via WhatsApp
-              </Button>
+              <Button
+  className="w-full sm:w-auto bg-[#25D366] hover:bg-[#128C7E] text-white rounded-full px-8 py-6 text-lg shadow-lg flex items-center justify-center gap-2 transition-all"
+  onClick={() => {
+    const message =
+      "Hello Tulsi Mehndi Studio 🌿\n\n" +
+      "I would like to book a Mehndi appointment.\n\n" +
+      "📅 Event Date:\n" +
+      "📍 Location:\n" +
+      "👰 Type of Mehndi (Bridal / Party / Guest):\n" +
+      "📞 Contact Number:\n\n" +
+      "Please let me know the availability and charges.\n" +
+      "Thank you!";
+
+    const url =
+      "https://wa.me/918369315540?text=" +
+      encodeURIComponent(message);
+
+    window.open(url, "_blank");
+  }}
+>
+  <FaWhatsapp className="h-6 w-6" />
+  Book via WhatsApp
+</Button>
             </div>
           </div>
 
