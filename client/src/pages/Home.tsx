@@ -166,7 +166,7 @@ const About = () => {
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
               {/* About Section Image - Artist Applying Mehndi */}
               <img 
-                src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                src="/main.jpg" 
                 alt="Artist applying mehndi"
                 className="w-full h-auto object-cover"
               />
@@ -278,12 +278,12 @@ const Services = () => {
 const Gallery = () => {
   // Using placeholders from Unsplash with henna keywords
   const images = [
-    "https://images.unsplash.com/photo-1568254183919-78a4f43a2877?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
-    "https://images.unsplash.com/photo-1596236561196-6e271c66286c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
-    "https://images.unsplash.com/photo-1616091093729-c0463d3957eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
-    "https://images.unsplash.com/photo-1582260656641-69234b6e5124?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
-    "https://images.unsplash.com/photo-1598449356475-b9f71db7d847?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
-    "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+    "/portfolio1.jpg",
+    "/portfolio2.jpg",
+    "/portfolio3.jpg",
+    "/portfolio4.jpg",
+    "/portfolio5.jpg",
+    "/portfolio6.jpg"
   ];
 
   return (
