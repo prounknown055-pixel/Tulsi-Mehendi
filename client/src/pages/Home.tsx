@@ -422,7 +422,7 @@ const Contact = () => {
   }}
 >
   <FaWhatsapp className="h-6 w-6" />
-  Book via WhatsApp
+  <span>Book via WhatsApp</span>
 </Button>
             </div>
           </div>
