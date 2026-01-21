@@ -27,6 +27,8 @@
     "@radix-ui/react-toast": "^1.1.5",
     "@radix-ui/react-label": "^2.0.2",
 
+    "@supabase/supabase-js": "^2.39.7",
+
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "tailwind-merge": "^2.3.0"
