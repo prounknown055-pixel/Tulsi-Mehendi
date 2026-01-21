@@ -141,10 +141,10 @@ const Hero = () => {
       >
         {/* Intricate Mehndi Hand Illustration Placeholder */}
         <img 
-          src="https://pixabay.com/get/gadd7c0bfbf099062858347a2e1bdeff1df29b7c4260835550ab16e16ff5eb298eebaee87e6991ead3473ed2e12d991741b16c43e127203445e65b1699fbc7077_1280.jpg" 
-          alt="Mehndi Design"
-          className="w-full h-full object-contain object-bottom opacity-50 mix-blend-multiply mask-image-gradient"
-        />
+  src="/main.jpg"
+  alt="Tulsi Mehndi Studio"
+  className="w-full h-full object-contain object-bottom drop-shadow-xl"
+/>
       </motion.div>
     </section>
   );
