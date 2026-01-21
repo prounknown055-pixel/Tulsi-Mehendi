@@ -279,11 +279,11 @@ const Gallery = () => {
   // Using placeholders from Unsplash with henna keywords
   const images = [
     "/portfolio1.jpg",
-    "/portfolio2.jpg",
-    "/portfolio3.jpg",
     "/portfolio4.jpg",
     "/portfolio5.jpg",
     "/portfolio6.jpg"
+    "/portfolio2.jpg",
+    "/portfolio3.jpg",
   ];
 
   return (
