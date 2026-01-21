@@ -1,12 +1,7 @@
 import { useMutation } from "@tanstack/react-query";
 import { supabase } from "@/lib/supabase";
 import { useToast } from "@/hooks/use-toast";
-
-export interface InsertInquiry {
-  name: string;
-  email: string;
-  message: string;
-}
+import type { InsertInquiry } from "@/shared/schema";
 
 export function useCreateInquiry() {
   const { toast } = useToast();
@@ -15,9 +10,14 @@ export function useCreateInquiry() {
     mutationFn: async (data: InsertInquiry) => {
       const { error } = await supabase
         .from("inquiries")
-        .insert([data]);
+        .insert({
+          name: data.name,
+          email: data.email,
+          message: data.message,
+        });
 
       if (error) {
+        console.error("Supabase error:", error);
         throw error;
       }
 
