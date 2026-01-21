@@ -217,19 +217,19 @@ const Services = () => {
       title: "Bridal Mehndi",
       description: "Intricate, full-hands and feet designs that tell your love story. Includes consultation and trial.",
       price: "Starting from ₹5,100",
-      image: image: "/bridal.jpg" // Bridal hands
+      image: "/bridal.jpg" // Bridal hands
     },
     {
       title: "Party Henna",
       description: "Elegant, modern designs for bridesmaids and guests. Quick application with beautiful results.",
       price: "Starting from ₹500/hand",
-      image: "https://images.unsplash.com/photo-1550608552-4a7b7a783704?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" // Simple design
+      image: "/party.jpg" // Simple design
     },
     {
       title: "Guest Events",
       description: "Hourly packages for Sangeet and Mehndi parties. We bring a team of expert artists.",
       price: "Hourly Packages Available",
-      image: "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" // Group/Event
+      image: "/guest.jpg" // Group/Event
     }
   ];
 
