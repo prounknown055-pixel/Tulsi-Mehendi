@@ -14,15 +14,6 @@ import {
 } from "lucide-react";
 import { FaPinterest, FaWhatsapp } from "react-icons/fa"; // Importing from react-icons for brand specific ones not in Lucide
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { useCreateInquiry } from "@/hooks/use-inquiries";
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
-import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { insertInquirySchema, type InsertInquiry } from "../shared/schema";
-
 // --- Components ---
 
 const Navbar = () => {
@@ -338,25 +329,6 @@ const Gallery = () => {
 };
 
 const Contact = () => {
-  const { mutate: submitInquiry, isPending } = useCreateInquiry();
-  
-  const form = useForm<InsertInquiry>({
-    resolver: zodResolver(insertInquirySchema),
-    defaultValues: {
-      name: "",
-      email: "",
-      message: "",
-    },
-  });
-
-  const onSubmit = (data: InsertInquiry) => {
-    submitInquiry(data, {
-      onSuccess: () => {
-        form.reset();
-      }
-    });
-  };
-
   return (
     <section id="contact" className="py-24 bg-secondary/5 relative overflow-hidden">
       {/* Background decoration */}
@@ -438,68 +410,8 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Contact Form */}
-          <Card className="border-none shadow-2xl bg-white/80 backdrop-blur-sm">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-serif text-henna mb-6">Send an Inquiry</h3>
-              <Form {...form}>
-                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                  <FormField
-                    control={form.control}
-                    name="name"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-foreground/80">Your Name</FormLabel>
-                        <FormControl>
-                          <Input placeholder="e.g. Anjali Sharma" {...field} className="bg-white" />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  <FormField
-                    control={form.control}
-                    name="email"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-foreground/80">Email Address</FormLabel>
-                        <FormControl>
-                          <Input placeholder="e.g. anjali@example.com" {...field} className="bg-white" />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  <FormField
-                    control={form.control}
-                    name="message"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-foreground/80">Message</FormLabel>
-                        <FormControl>
-                          <Textarea 
-                            placeholder="Tell us about your event dates and requirements..." 
-                            className="resize-none min-h-[120px] bg-white" 
-                            {...field} 
-                          />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  <Button 
-                    type="submit" 
-                    className="w-full bg-henna hover:bg-henna/90 text-white rounded-xl py-6 bg-[#823136]"
-                    disabled={isPending}
-                  >
-                    {isPending ? "Sending..." : "Send Message"}
-                  </Button>
-                </form>
-              </Form>
-            </CardContent>
-          </Card>
-
-        </div>
+       {/* Contact Form */}
+          </div>
       </div>
     </section>
   );
