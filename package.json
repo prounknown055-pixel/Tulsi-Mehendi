@@ -1,0 +1,10 @@
+{
+  "name": "tulsi-mehendi",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build:client": "npm --prefix client install && npm --prefix client run build",
+    "dev:client": "npm --prefix client run dev"
+  }
+}
