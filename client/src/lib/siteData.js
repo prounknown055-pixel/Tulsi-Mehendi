@@ -1,7 +1,7 @@
 export const siteData = {
   brandName: "Tulsi Mehendi",
 
-  whatsapp: "919999999999",   // apna number baad me change
+  whatsapp: "910112553",   // apna number baad me change
   instagram: "https://instagram.com/totalgaming_official",
   facebook: "https://facebook.com/tulsimehendi",
   pinterest: "https://pinterest.com/tulsimehendi",
