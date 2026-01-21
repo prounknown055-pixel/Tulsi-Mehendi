@@ -281,7 +281,7 @@ const Gallery = () => {
     "/portfolio1.jpg",
     "/portfolio4.jpg",
     "/portfolio5.jpg",
-    "/portfolio6.jpg"
+    "/portfolio6.jpg",
     "/portfolio2.jpg",
     "/portfolio3.jpg",
   ];
